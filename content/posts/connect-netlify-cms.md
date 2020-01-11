@@ -18,6 +18,6 @@ Connecting this
 
 I was able to find some related issues with Gatsby, and found that downgrading the core-js to an earlier version fixed the problem...almost an hour later.
 
-#Issues logging in
+## Issues logging in
 
 There were also some hiccups with the Netlify CMS login process. Working from a local copy was kind of a pain.
