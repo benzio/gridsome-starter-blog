@@ -9,6 +9,15 @@ canonical_url: false
 description: "Connecting this site to Netlify CMS isn't difficult. However, there are issues with core-js on build."
 ---
 
-Fortunately, I've been working with the Github and deploying to Netlify long enough now that I no longer clench up when a build fails. Knowing that this entire process of putting together a static website is a learning process also helps. 
+One of the drawbacks for a non-developer like me with Gridsome (or any other static site generator) are build fails. I hate build fails. Build fails bring me face to face with my own ignorance and lack of skill. 
 
-However, when trying to connect this blog to Netlify CMS, the build fails each time due to a discrepancy with core-js and, unfortunately, there are no gridsome-specific issues floating around out there to troubleshoot the issue. 
+Fortunately, I've been working with the Github--deploying to Netlify--long enough now that they no longer induce the physical displays of anger of endeavors past. However, they’re still annoying as hell. I just want things to work (don’t we all?). 
+
+Connecting this 
+[Gridsome Starter Blog](https://gridsome.org/starters/gridsome-blog-starter/) to Netlify CMS, the build fails each time due to a discrepancy with core-js version and, unfortunately, there are no gridsome-specific issues floating around out there to troubleshoot the issue. 
+
+I was able to find some related issues with Gatsby, and found that downgrading the core-js to an earlier version fixed the problem...almost an hour later.
+
+#Issues logging in
+
+There were also some hiccups with the Netlify CMS login process. Working from a local copy was kind of a pain.
