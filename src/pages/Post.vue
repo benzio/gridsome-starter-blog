@@ -10,11 +10,10 @@
 </template>
 
 <page-query>
-query allPost {
+query Post {
   allPost (limit: 5) {
     edges {
       node {
-        _id
         title
       }
     }
