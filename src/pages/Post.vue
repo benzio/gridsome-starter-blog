@@ -10,7 +10,7 @@
 </template>
 
 <page-query>
-query Post {
+query allPost {
   Post (limit: 5) {
     edges {
       node {
