@@ -17,24 +17,12 @@
 </template>
 
 <page-query>
-query {
-  posts: allPost {
-    edges {
-      node {
-        id
-        title
-        path
-        date (format: "D. MMMM YYYY")
-        timeToRead
-        author {
-          title
-          path
-          avatar (width: 60)
-        }
-        excerpt
-        content
-      }
-    }
+query BlogPost ($path: String!) {
+  post (path: $path) {
+    title
+    date (format: "D. MMMM YYYY")
+    content
+    excerpt
   }
 }
 </page-query>
