@@ -14,7 +14,6 @@ query Posts {
   allPosts (limit: 5) {
     edges {
       node {
-        _id
         title
       }
     }
