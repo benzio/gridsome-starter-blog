@@ -2,7 +2,7 @@
   <Layout>
     <h2>Latest blog posts</h2>
     <ul>
-      <li v-for="edge in $page.allWordPressPost.edges" :key="edge.node.id">
+      <li v-for="edge in $page.allPost.edges" :key="edge.node.id">
         {{ edge.node.title }}
       </li>
     </ul>
