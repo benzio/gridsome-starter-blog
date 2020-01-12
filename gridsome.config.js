@@ -34,6 +34,7 @@ module.exports = {
       options: {
         publicPath: "/admin",        enableIdentityWidget: false, // necessary if using implicit auth
       }
+    },
   ],
 
   transformers: {
