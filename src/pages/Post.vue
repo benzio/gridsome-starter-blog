@@ -1,45 +1,58 @@
 <template>
   <Layout>
-    <Section class="post">
-
-      <div class="post-header container-sm text-center mb">
-        <h1 v-html="$page.post.title"/>
+    <!--Hero-->
+    <section class="inner-hero">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-md-12">
+            <h1>Blog</h1>
+            <p>Our latest posts educating clients</p>
+          </div>
+        </div>
       </div>
-
-      <p class="lead" v-html="$page.post.excerpt"/>
-
-      <div v-html="$page.post.content"/>
-    </Section>
+    </section>
+    <!--Content-->
+    <section class="inner-content">
+      <div class="container">
+        <div class="row">
+          <!--Content-->
+          <div
+            v-for="edge in $page.posts.edges"
+            :key="edge.node.id"
+            class="col-md-12 text-center"
+          >
+            <h2>
+              <g-link :to="edge.node.path">{{ edge.node.title }}</g-link>
+            </h2>
+            <p>{{ edge.node.excerpt }}</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <Footer></Footer>
   </Layout>
 </template>
 
 <page-query>
-query BlogPost ($path: String!) {
-  post (path: $path) {
-    title
-    date (format: "D. MMMM YYYY")
-    content
-    excerpt
+query BlogPosts {
+  posts: allPost {
+    edges {
+      node {
+        id
+        title
+        path
+        date (format: "D. MMMM YYYY")
+        excerpt
+      }
+    }
   }
 }
 </page-query>
 
 <script>
 export default {
-  metaInfo () {
-    return {
-      title: this.$page.post.title,
-      meta: [
-        {
-          name: 'description',
-          content: this.$page.post.excerpt
-        }
-      ]
-    }
+  metaInfo: {
+    title: 'Blog'
   }
 }
 </script>
-
-<style lang="scss">
-// Your styles goes here
-</style>
