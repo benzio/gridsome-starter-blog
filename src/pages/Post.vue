@@ -11,7 +11,7 @@
 
 <page-query>
 query Post {
-  allWordPressPost (limit: 5) {
+  Post (limit: 5) {
     edges {
       node {
         _id
