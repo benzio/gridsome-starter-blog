@@ -11,7 +11,7 @@
 
 <page-query>
 query allPost {
-  Post (limit: 5) {
+  allPost (limit: 5) {
     edges {
       node {
         _id
