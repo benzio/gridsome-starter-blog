@@ -10,8 +10,8 @@
 </template>
 
 <page-query>
-query Posts {
-  allPosts (limit: 5) {
+query Post {
+  allPost (limit: 5) {
     edges {
       node {
         title
