@@ -1,17 +1,14 @@
 <template>
   <Layout>
-     <Section container="md" class="blog-posts">
-      <div class="mb-x2 container-sm text-center">
-        <h1>Gridsome Blog</h1>
-        <p style="opacity: .8">Follow our mission to make the easiest and most fun framework for building modern websites & apps that are fast by default.</p>
+    <Section class="post">
+
+      <div class="post-header container-sm text-center mb">
+        <h1 v-html="$page.post.title"/>
       </div>
-      <PostCard v-for="edge in $page.posts.edges" :key="edge.node.id" :post="edge.node"/>
 
-      <p class="text-center">
-        Want to contribute to Gridsome blog?
-        <g-link to="/docs/how-to-contribute#contributing-to-the-blog"> Learn more here</g-link>
-      </p>
+      <p class="lead" v-html="$page.post.excerpt"/>
 
+      <div v-html="$page.post.content"/>
     </Section>
   </Layout>
 </template>
@@ -28,13 +25,21 @@ query BlogPost ($path: String!) {
 </page-query>
 
 <script>
-import PostCard from '@/components/PostCard.vue'
 export default {
-  components: {
-    PostCard
-  },
-  metaInfo: {
-    title: 'Blog'
+  metaInfo () {
+    return {
+      title: this.$page.post.title,
+      meta: [
+        {
+          name: 'description',
+          content: this.$page.post.excerpt
+        }
+      ]
+    }
   }
 }
 </script>
+
+<style lang="scss">
+// Your styles goes here
+</style>
