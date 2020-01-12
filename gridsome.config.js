@@ -28,7 +28,12 @@ module.exports = {
           }
         }
       }
-    }
+    },
+    {
+      use: "gridsome-plugin-netlify-cms",
+      options: {
+        publicPath: "/admin",        enableIdentityWidget: false, // necessary if using implicit auth
+      }
   ],
 
   transformers: {

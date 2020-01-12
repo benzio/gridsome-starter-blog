@@ -14,7 +14,7 @@ One of the drawbacks for a non-developer like me with Gridsome (or any other sta
 Fortunately, I've been working with the Github--deploying to Netlify--long enough now that they no longer induce the physical displays of anger of endeavors past. However, they’re still annoying as hell. I just want things to work (don’t we all?). 
 
 Connecting this 
-[Gridsome Starter Blog](https://gridsome.org/starters/gridsome-blog-starter/) to Netlify CMS, the build fails each time due to a discrepancy with core-js version and, unfortunately, there are no gridsome-specific issues floating around out there to troubleshoot the issue. 
+[Gridsome Starter Blog](https://gridsome.org/starters/gridsome-blog-starter/) to Netlify CMS, the build fails each time due to a discrepancy with core-js version. There were no 
 
 I was able to find some related issues with Gatsby, and found that downgrading the core-js to an earlier version fixed the problem...almost an hour later.
 
