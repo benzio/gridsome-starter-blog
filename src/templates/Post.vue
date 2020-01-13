@@ -66,7 +66,6 @@ query Post ($id: ID!) {
       path
     }
     content
-    cover_image (width: 860, blur: 10)
   }
 }
 </page-query>
