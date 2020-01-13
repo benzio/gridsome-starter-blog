@@ -13,7 +13,6 @@
 <page-query>
 query Tag ($id: ID!) {
   tag (id: $id) {
-    title
     belongsTo {
       edges {
         node {
@@ -22,7 +21,7 @@ query Tag ($id: ID!) {
             path
             date (format: "D. MMMM YYYY")
             timeToRead
-            description
+            excerpt
             content
           }
         }
