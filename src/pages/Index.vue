@@ -24,7 +24,6 @@ query {
         path
         tags {
           id
-          title
           path
         }
       }
