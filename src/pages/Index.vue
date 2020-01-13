@@ -20,7 +20,7 @@ query {
         title
         date (format: "D. MMMM YYYY")
         timeToRead
-        description
+        excerpt
         path
         tags {
           id
