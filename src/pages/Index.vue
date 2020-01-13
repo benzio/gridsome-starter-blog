@@ -19,6 +19,7 @@ query {
         id
         title
         date (format: "D. MMMM YYYY")
+        cover_image
         timeToRead
         excerpt
         path
