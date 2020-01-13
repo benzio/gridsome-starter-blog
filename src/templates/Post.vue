@@ -65,7 +65,6 @@ query Post ($id: ID!) {
       id
       path
     }
-    description
     content
     cover_image (width: 860, blur: 10)
   }
