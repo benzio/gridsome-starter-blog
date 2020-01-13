@@ -63,7 +63,6 @@ query Post ($id: ID!) {
     timeToRead
     tags {
       id
-      title
       path
     }
     description
