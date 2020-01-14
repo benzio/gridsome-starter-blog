@@ -33,4 +33,4 @@ query {
 </page-query>
 ```
 
-Apparently, this is [built into Gridsome](<`allPost (filter: { published: { eq: true }})`>) and is "based on**230 words per minute** in Gridsome", which explains why it doesn't appear in my Netlify CMS admin panel or `config.yml` but can be queried and generated on my site.
+Apparently, this is [built into Gridsome](<`allPost (filter: { published: { eq: true }})`>) and is "based on **230 words per minute** in Gridsome", which explains why it doesn't appear in my Netlify CMS admin panel or `config.yml` but can be queried and generated on my site.
