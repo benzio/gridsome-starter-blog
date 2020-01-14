@@ -11,7 +11,7 @@ Here it is between my query tags in index.vue:
 
 ``
 
-```vue
+```
 <page-query>
 query {
   posts: allPost (filter: { published: { eq: true }}) {
