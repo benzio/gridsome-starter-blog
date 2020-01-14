@@ -5,6 +5,8 @@ published: true
 date: 2020-01-13T20:27:15.612Z
 cover_image: ''
 ---
+<style>img {padding: 20px;}</style>
+
 One of the fields I noticed when setting up Netlify CMS was `timeToRead`.
 
 Here it is in a PostMeta.vue component, which is part of the PostCard.vue component: 
