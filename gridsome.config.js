@@ -6,7 +6,7 @@
 
 module.exports = {
   siteName: 'atheema',
-  siteDescription: 'I am not a developer, but I play one on the web.'
+  siteDescription: 'I am not a developer, but I play one on the web.',
 
   templates: {
     Post: '/:title',
