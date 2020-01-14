@@ -15,6 +15,7 @@ query Post {
     edges {
       node {
         title
+        excerpt
       }
     }
   }
