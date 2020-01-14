@@ -8,7 +8,7 @@
 		</h1>
 
 		<p class="author__intro">
-			Blog
+			I'm not a developer, but I play one on the web.
 		</p>
 
 		
