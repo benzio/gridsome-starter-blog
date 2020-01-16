@@ -3,7 +3,7 @@ title: timeToRead
 excerpt: timeToRead custom field built into Gridsome
 published: true
 date: 2020-01-13T20:27:15.612Z
-cover_image: ''
+cover_image: /uploads/photo-of-woman-reading-book-2961740.jpg
 tags:
   - cms
 ---
