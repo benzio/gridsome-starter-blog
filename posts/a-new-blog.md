@@ -4,6 +4,8 @@ excerpt: timeToRead custom field built into Gridsome
 published: true
 date: 2020-01-13T20:27:15.612Z
 cover_image: ''
+tags:
+  - cms
 ---
 <style>img {padding: 20px;}</style>
 
