@@ -7,7 +7,7 @@ tags:
   - templates
   - tag
 ---
-Post tags are not only a handy way of loosely categorizing your content, but the functionality they provide to quickly pull up posts based on the tag links provides some nice, additional navigation. 
+Post tags are not only a handy way of loosely categorizing your content, but the functionality they provide to quickly pull up posts based on the tag links provides some useful navigation. 
 
 In my hacked together setup, I did run into an issue where my post tags weren't showing in my PostCard.vue component or in my Post.vue template. Since the PostTags.vue component gets used in both places, this is where I started troubleshooting. 
 
