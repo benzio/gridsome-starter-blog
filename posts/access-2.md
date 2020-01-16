@@ -9,13 +9,11 @@ I have resolved myself to writing this post, whether I like it or not. Whether i
 
 You may think this isn't that big of a deal, and for a developer, it's not. For someone who knows how to work with the data, troubleshoot the build errors, get fields to correspond between the settings and templates, it's not a big deal at all. 
 
-But for me, someone who has no idea what they are doing? Yes. It's a big deal. Finally, relief.
+But for me, someone who has no idea what they are doing? Yes. It's a big deal. Finally, it works.
 
 ## Why a static site? And why Gridsome?
 
 I first became enamored with static sites a little over a year ago when, in my day-to-day responsibilities working with WordPress administration and optimization, I was getting tired of slow page loads and the general headaches associated with ongoing WordPress maintenance. "There has to be a better way," I thought. 
-
-
 
 This is when I discovered [Gatsby](https://www.gatsbyjs.org/). Despite the steep learning curve (having only really worked with WordPress and php, and knowing nothing about JAM stack), Gatsby seemed to be exactly what I needed. After several weeks of installing and working with different [starters](https://www.gatsbyjs.org/starters/), creating and modifying components and templates, I kind of dropped it. React was kind of a pain to work with and presented a steeper learning curve than I wanted to handle. 
 
@@ -31,13 +29,9 @@ I do have a separate personal blog that uses [Forestry](https://forestry.io/), b
 
 Netlify CMS seems to be the most common CMS to use with Gridsome and it looks like it has the most support (albeit not much for Gridsome, but it has plenty of support for other static site generators). I guess I could've gone through the painstaking steps of using my Forestry starter as a guide to implementing it on this site, but after trying to implement Netlify CMS a few times, it became kind of a personal challenge, so I just had to go with it. 
 
-
-
 ## The challenges connecting Netlify CMS
 
 There were really only two major hurdles in getting this cms off the ground: the first being I was left at the mercy of the [Gridsome guide](https://gridsome.org/docs/guide-netlify-cms/) and was really working without any kind of template; the second being it was kind of a pain fixing the build errors, and there were several. However, once I looked at a few of the build errors, I could see a pattern and they became much easier to pinpoint. 
-
-
 
 ### Challenge one: working from scratch
 
@@ -55,7 +49,7 @@ This wasn't the biggest pain I've ever had setting up a website, but I was makin
 
 I knew it wasn't going to magically work after the initial setup, but I was getting a little frustrated with a couple of the build errors in the `page query` on the index and post templates. 
 
-In the Netlify `config.yml `file, you have a set of collections with field labels. These field labels need to correspond to the fields you query in your templates. So, for example, if you have a configuration file with the following fields: 
+In the Netlify `config.yml`file, you have a set of collections with field labels. These field labels need to correspond to the fields you query in your templates. So, for example, if you have a configuration file with the following fields: 
 
 `fields:`
 
