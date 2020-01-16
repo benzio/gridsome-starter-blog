@@ -5,5 +5,6 @@ published: false
 date: 2020-01-16T05:13:05.024Z
 tags:
   - templates
+  - tag
 ---
 For some reason, my post tags weren't displaying. 
