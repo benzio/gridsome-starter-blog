@@ -4,6 +4,9 @@ excerpt: 'Finally, I have a working Gridsome site with Netlify CMS.'
 published: true
 date: 2020-01-13T18:25:32.904Z
 cover_image: /uploads/shutterstock_1590313948.jpg
+tags:
+  - netlifycms
+  - gridsome
 ---
 I have resolved myself to writing this post, whether I like it or not. Whether it's good, or not. I've been working on the setup for this blog for about five hours now over the past three days, and I've finally reached the point where I can log into my Netlify CMS admin panel, publish a post, and have it display correctly on this site. 
 
