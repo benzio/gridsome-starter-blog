@@ -34,7 +34,7 @@ Netlify CMS seems to be the most common CMS to use with Gridsome and it looks li
 
 ## The challenges connecting Netlify CMS
 
-There were really only two major hurdles in getting this cms off the ground: the first being I was left at the mercy of the [Gridsome guide](https://gridsome.org/docs/guide-netlify-cms/) and was really working without any kind of template; the second being it was kind of a pain fixing the build errors, and there were several. However, once I looked at a few of the build errors, I could see a pattern and they became much easier to pinpoint. 
+There were really only two major hurdles in getting this CMS off the ground: the first being I was left at the mercy of the [Gridsome guide](https://gridsome.org/docs/guide-netlify-cms/) and was really working without any kind of template; the second being it was kind of a pain fixing the build errors, and there were several. However, once I looked at a few of the build errors, I could see a pattern and they became much easier to pinpoint. 
 
 ### Challenge one: working from scratch
 
