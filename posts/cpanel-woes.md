@@ -12,5 +12,5 @@ tags:
 A couple of things I learned this week:
 
 1. Getting Node and NPM working on cPanel is probably more frustrating than changing a headlight on a Prius...
-2. Which has made that much more appreciative of Netlify, and how easy they make it to deploy a site. 
+2. Which has made me that much more appreciative of Netlify, and how easy they make it to deploy a site. 
 3. The above is rendered almost unworthy of note since there is this thing called a *dist* folder that essentially allows you to put your folders anywhere.
