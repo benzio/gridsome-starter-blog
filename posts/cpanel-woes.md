@@ -5,7 +5,6 @@ published: true
 date: 2020-02-05T02:09:09.450Z
 cover_image: /uploads/9157535A-B5F2-4F2D-9976-B40C3E40C2DE.jpeg
 tags:
-  - tag
   - netlify
   - deploy
 ---
