@@ -1,9 +1,10 @@
 <template>
-	<g-link class="logo" to="/">
-	  <span class="logo__text">
-	    &larr; {{ $static.metadata.siteName }}
-	  </span>
-	</g-link>
+	<div class="logo">
+
+<g-link to="/">		
+<g-image alt="Author image" class="author__image" src="~/assets/images/a-logo2.png" width="200" height="200" blur="5" />	
+</g-link>
+	</div>
 </template>
 
 <static-query>
